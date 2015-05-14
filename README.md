@@ -12,7 +12,7 @@
 
 ###Given Data:
 * <B>Data file name:</B> Kaggle_YourCabs_training.csv
-*<B> File descriptions:</B> The training set (over 43,000 bookings). Includes the output Car_Cancellation (0- not cancelled or 1- cancelled) and the misclassification costs in Cost_of_error.
+* <B>File descriptions:</B> The training set (over 43,000 bookings). Includes the output Car_Cancellation (0- not cancelled or 1- cancelled) and the misclassification costs in Cost_of_error.
 * <B>Data fields:</B>
     * <u>id</u> - booking ID
     * <u>user_id</u> - the ID of the customer (based on mobile number)
@@ -47,7 +47,7 @@
 * There are many columns in the data set which contains null values (missing data). 
 * Here, strategy used to handle missing values is filling all 'NaN' values with number 'zero'(0).
 
-###Technique used (randomforestclassifier):
+###Technique used (RandomForestClassifier):
 * Given data set is divided as “train data set” and “test data set”. 
   * Training set is used to build the model. 
   * Test set is used to test the accuracy of the model after it is being built
@@ -56,7 +56,7 @@
 * We will repeat the process several times and then make a final prediction on each observation. This final prediction can simply be the mean of each prediction.
 * This is how our model predicts the best possible outcome from the given set of data.
 
-###Auc is the Error matric used:
+###AUC is an Error matric used:
 * AUC is a metric used to judge predictions in binary response (0/1) problem.
 * For a binary choice prediction (car cancellation), there are four possible outcomes:
   * true positive - a positive instance that is correctly classified as positive.
