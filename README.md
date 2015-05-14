@@ -71,7 +71,33 @@
 * AUC as the name implies, it is calculated as the area under the ROC curve.
 * A perfect model will score an AUC of 1, while random guessing will score an AUC of around of 0.5. In practice, almost all models will fit somewhere in between.
 
+###ROC curve:
+Fig1: ROC curve for our model to predict car cancellation with AUC=0.9
 
+<figure>
+  <img src="https://cloud.githubusercontent.com/assets/10646127/7625528/575fa212-f9be-11e4-885a-e313632d14e9.png" alt="ROC curve" width="304" height="228">
+  <figcaption>Fig 1. ROC curve</figcaption>
+</figure>
+
+###Precision and Recall:
+* Precision is the fraction of correctly identified examples of a class (ratio of true positives to all positives).
+* Recall is the fraction of observations classified in that class that was correctly classified
+* Where high precision relates to a 'low false positive rate', and high recall relates to a 'low false negative rate'.
+* <B>For this project:</B>
+   * Precision: The model will correctly identify 93% of cab cancellation. Conversely there is a 7% chance it will identify a non-cancelled booking as a cancelled booking. 
+   * Recall: out of the car booking the model identified as cancelled, 94% of them will actually be cancelled. That is, our model 6% of the times may identify a cancelled booking as a non-cancelled booking.
+
+###Variable importance measures:
+Fig2: Bar chart indicates the importance of the variables in descending order
+
+<figure>
+  <img src="https://cloud.githubusercontent.com/assets/10646127/7625528/575fa212-f9be-11e4-885a-e313632d14e9.png" alt="ROC curve" width="304" height="228">
+  <figcaption>Fig 2. Important variables</figcaption>
+</figure>
+
+####source:
+* https://inclass.kaggle.com/c/predicting-cab-booking-cancellations
+* https://www.kaggle.com/wiki/AUC
 
 
 
