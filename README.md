@@ -95,6 +95,21 @@ Fig2: Bar chart indicates the importance of the variables in descending order
   <figcaption>Fig 2. Important variables</figcaption>
 </figure>
 
+###Drawbacks of the model:
+* Our entire strategy has been to fit a model as strongly as possible to our 20% of the data. 20% sample may not really reflect reality. Our model will over fit to the 20% holdout, and may not actually perform well in real life.
+* To overcome over fitting problem we use "Validation" technique. Now, for car cancellation prediction “K-Fold” Cross Validation is used. (Average K-Fold CV score (AUC) is 0.77).
+* There is a 7% chance it will identify a non-cancelled booking as a cancelled booking.
+* our model 6% of the times may identify a cancelled booking as a non-cancelled booking.
+
+###Cost of error:
+* Confusion matrix for the model gives:
+   * true positive(tp)=8033
+   * false positive(fp)=40
+   * false negetive(fn)=488
+* Therefore cost of error is given by:
+   * fnx100=>488x100=48800 units (cost of miss-classification as non-cancelled instead cancelled)
+   * fpx1=>40x1=40 units (cost of miss-classification as cancelled instead non-cancelled)
+
 ####source:
 * https://inclass.kaggle.com/c/predicting-cab-booking-cancellations
 * https://www.kaggle.com/wiki/AUC
