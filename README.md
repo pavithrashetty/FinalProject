@@ -91,7 +91,7 @@ Fig1: ROC curve for our model to predict car cancellation with AUC=0.9
 Fig2: Bar chart indicates the importance of the variables in descending order
 
 <figure>
-  <img src="https://cloud.githubusercontent.com/assets/10646127/7625528/575fa212-f9be-11e4-885a-e313632d14e9.png" alt="ROC curve" width="304" height="228">
+  <img src="https://cloud.githubusercontent.com/assets/10646127/7625669/5c064314-f9c0-11e4-9971-6c80ba79678f.png" alt="ROC curve" width="304" height="228">
   <figcaption>Fig 2. Important variables</figcaption>
 </figure>
 
